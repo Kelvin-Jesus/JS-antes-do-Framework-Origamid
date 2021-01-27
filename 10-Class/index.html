@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        /* html{
+            scroll-behavior: smooth;
+        } */
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-X: hidden;
+        }
+        section{
+            height: 60vh;
+            margin: 20px;
+            border-radius: 4px;
+            padding: 20px;
+            display:flex;
+            background: #00000033;
+            top: 0;
+            position: relative;
+        }
+        section h1{
+            margin: auto;
+            font-size: 4rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            width: 100px;
+            height: 100vh;
+            padding: 0;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            position: fixed;
+        }
+        ul{
+            margin: auto;
+            list-style: none;
+            padding: 0;
+
+        }
+        li{
+            margin: 15px 0;
+            overflow: hidden;
+            text-indent: 100px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            background: #333;
+            width: 24px;
+            height: 24px;
+            border-radius: 30px;
+        }
+        a.active{
+            background: tomato;
+        }
+        .content{
+            padding-left: 100px;
+            position: absolute;
+            top: 0;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="sobre">
+            <h1>Sobre</h1>
+        </section>
+        <section id="produtos">
+            <h1>Produtos</h1>
+        </section>
+        <section id="clientes">
+            <h1>Clientes</h1>
+        </section>
+        <section id="contato">
+            <h1>Contato</h1>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
